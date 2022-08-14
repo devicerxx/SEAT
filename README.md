@@ -1,4 +1,6 @@
 # SEAT
+![](https://img.shields.io/badge/license-MIT-green)
+
 This repository is the official implementation of "Stable and Efficient Adversarial Trainging through Local Linearization".
 
 ## Dependencies
