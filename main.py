@@ -81,8 +81,6 @@ parser.add_argument('--test_step', default=10, type=int, help='itertion number o
 parser.add_argument('--test_gamma', default=2., type=float, help='step size of attack during testing')
 parser.add_argument('--test_randinit', action='store_false', help='randinit usage flag (default: on)')
 
-# gradalign
-parser.add_argument('--gradalign_lambda', default=0.2, type=float, help='lambda for gradalign')
 # guideattack
 parser.add_argument('--GAT_lambda', default=10.0, type=float, help='lambda for GAT')
 # evaluate
@@ -193,10 +191,6 @@ def main():
     print ('Start training: ', args.start_epoch, '->', args.epochs)
     
     print ('adversary:', args.attack)
-    if args.attack == 'gradalign':
-        arr_lambda = [0, 0.03, 0.04, 0.05, 0.06, 0.08, 0.11, 0.15, 0.20, 0.27, 0.36, 0.47, 0.63, 0.84, 1.12, 1.50, 2.00]
-        args.gradalign_lambda = arr_lambda[int(args.train_eps)]
-        print ('gradalign lambda:', args.gradalign_lambda)
     if args.attack == 'GAT':
         print ('GAT_lambda:', args.GAT_lambda)
 
