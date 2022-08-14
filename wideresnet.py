@@ -1,3 +1,6 @@
+'''
+Wide-ResNet 24-10
+'''
 import math
 import torch
 import torch.nn as nn

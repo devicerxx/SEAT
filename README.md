@@ -1,4 +1,4 @@
-# SEAT
+# SEAT(Stable and Efficient Adversarial Training)
 ![](https://img.shields.io/badge/license-MIT-green)
 
 This repository is the official implementation of "Stable and Efficient Adversarial Trainging through Local Linearization".
